@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Cliente</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+</head>
+<body>
+<div class="form-container">
+    <h2>Registro de Cliente</h2>
+    <form th:action="@{/clientes/guardar}" th:object="${miCliente}" method="post">
+
+        <!-- ID oculto, solo para rescatar después -->
+        <input type="hidden" th:field="*{id}"/>
+
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" th:field="*{nombre}" placeholder="Ingrese su nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" th:field="*{apellido}" placeholder="Ingrese su apellido" required>
+        </div>
+
+        <div class="form-group">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" th:field="*{edad}" placeholder="Ingrese su edad" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" th:field="*{ciudad}" placeholder="Ingrese su ciudad" required>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="btn-submit">Guardar</button>
+            <button type="reset" class="btn-reset">Limpiar</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+
