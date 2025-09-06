@@ -12,8 +12,8 @@ body {
     padding: 25px 30px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    width: 80%;
-    max-width: 900px;
+    width: 85%;
+    max-width: 1000px;
     animation: fadeIn 0.7s ease-in-out;
 }
 
@@ -48,6 +48,39 @@ tbody tr:hover {
 
 tbody tr:nth-child(even) {
     background-color: #fafafa;
+}
+
+/* --- Estilo de los botones --- */
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-edit {
+    background: #2196F3;
+}
+
+.btn-edit:hover {
+    background: #1976D2;
+}
+
+.btn-delete {
+    background: #f44336;
+}
+
+.btn-delete:hover {
+    background: #d32f2f;
 }
 
 @keyframes fadeIn {
