@@ -1,89 +1,110 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f4f6f9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #333;
 }
 
 .form-container {
     background: #fff;
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    width: 400px;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    width: 420px;
+    border: 1px solid #e0e0e0;
     animation: fadeIn 0.8s ease-in-out;
 }
 
 .form-container h2 {
     text-align: center;
-    margin-bottom: 25px;
-    color: #333;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #444;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
 }
 
 input {
     width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #bbb;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
     font-size: 15px;
+    background-color: #fafafa;
     transition: all 0.3s ease;
 }
 
 input:focus {
-    border-color: #74ebd5;
+    border-color: #3498db;
+    background-color: #fff;
     outline: none;
-    box-shadow: 0 0 8px rgba(116, 235, 213, 0.6);
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
 }
 
 .form-buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-button {
-    padding: 12px 20px;
+.btn {
+    flex: 1;
+    padding: 12px 0;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn + .btn {
+    margin-left: 15px;
 }
 
 .btn-submit {
-    background: #4CAF50;
+    background: #3498db;
     color: white;
 }
 
 .btn-submit:hover {
-    background: #45a049;
+    background: #2980b9;
 }
 
 .btn-reset {
-    background: #f44336;
+    background: #e74c3c;
     color: white;
 }
 
 .btn-reset:hover {
-    background: #e53935;
+    background: #c0392b;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
+    from { opacity: 0; transform: translateY(-15px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+
+
 
