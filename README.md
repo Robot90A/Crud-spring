@@ -29,9 +29,12 @@ Su objetivo es gestionar entidades de manera sencilla y servir como base para el
 
 - <img width="983" height="267" alt="image" src="https://github.com/user-attachments/assets/460f8ab7-faf6-4338-bf0a-b2f8bbceef72" />
 
-- ## Prueba del CRUD
+- ## Archivo XML
 
-https://github.com/user-attachments/assets/0d34a501-c0f4-4099-bb7a-5b1853b42664
+- <img width="1030" height="934" alt="image" src="https://github.com/user-attachments/assets/88f6dfb0-7d8d-4024-aabd-14aaec22091d" />
+
+
+
 
 
 
