@@ -8,7 +8,7 @@
 <body>
 <div class="form-container">
     <h2>Registro de Cliente</h2>
-    <form th:action="@{/clientes/guardar}" th:object="${miCliente}" method="post">
+    <form th:action="@{/cliente/guardar}" th:object="${miCliente}" method="post">
 
         <!-- ID oculto, solo para rescatar después -->
         <input type="hidden" th:field="*{id}"/>
