@@ -19,7 +19,7 @@ import com.servicio.cliente.Service.ClienteServce;
 @RequestMapping(value = "/cliente")
 public class ClienteController {
 
-
+    //inyeccion de dependenia
     @Autowired
     private ClienteServce clienteServce;
 
