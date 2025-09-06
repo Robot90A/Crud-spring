@@ -29,9 +29,10 @@ Su objetivo es gestionar entidades de manera sencilla y servir como base para el
 
 - <img width="983" height="267" alt="image" src="https://github.com/user-attachments/assets/460f8ab7-faf6-4338-bf0a-b2f8bbceef72" />
 
-- ## Archivo XML
+- ## Pruebas desde MySQL Workbench
 
-- <img width="1030" height="934" alt="image" src="https://github.com/user-attachments/assets/88f6dfb0-7d8d-4024-aabd-14aaec22091d" />
+<img width="1555" height="838" alt="image" src="https://github.com/user-attachments/assets/1e256f7e-58cc-4087-ab36-bbc204d52c19" />
+
 
 
 
