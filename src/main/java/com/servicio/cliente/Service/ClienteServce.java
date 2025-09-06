@@ -1,6 +1,8 @@
 package com.servicio.cliente.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 import com.servicio.cliente.Models.ClienteModels;
 
 public interface ClienteServce {
@@ -10,7 +12,7 @@ public interface ClienteServce {
 
     public void GuardarCliente(ClienteModels cliente);
 
-    public ClienteModels ActualizarCliente(ClienteModels clienteModels);
+    public Optional<ClienteModels> CargarCliente(Long id);
 
     public void eliminarCliente(Long id);
     

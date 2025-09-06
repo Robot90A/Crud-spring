@@ -4,9 +4,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import com.servicio.cliente.Models.ClienteModels;
 import com.servicio.cliente.Repository.ClienteRepository;
+import java.util.Optional;
 
 @Service
 public class ClienteServiceImp implements ClienteServce {
@@ -31,11 +31,12 @@ public class ClienteServiceImp implements ClienteServce {
 
     @Override
     @Transactional
-    public ClienteModels ActualizarCliente(ClienteModels clienteModels) {
+        public Optional<ClienteModels> CargarCliente(Long id) {
 
-        return clienteRepository.save(clienteModels);
+            return clienteRepository.findById(id);
 
     }
+    
 
     @Override
     @Transactional
@@ -43,5 +44,8 @@ public class ClienteServiceImp implements ClienteServce {
 
         clienteRepository.deleteById(id);
     }
+
+    
+
 
 }
